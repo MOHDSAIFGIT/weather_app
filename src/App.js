@@ -1,11 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import react from "react";
+import Tempapp from './components/Tempapp';
 
 function App() {
   return (
-    <div>
-      <h1>hello saif</h1>
-    </div>
+    <Tempapp/>
   );
 }
 

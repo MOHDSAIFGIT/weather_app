@@ -32,6 +32,10 @@ html{
     min-height: 35rem;
 }
 
+.inputData ,.info{
+    display: grid;
+    justify-content: center;
+}
 .wave{
     opacity: 0.3;
     position: absolute;

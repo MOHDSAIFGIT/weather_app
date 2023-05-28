@@ -31,11 +31,40 @@ html{
     min-width: 20rem;
     min-height: 35rem;
 }
-
+.errorMsg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    font-size: xx-large;
+    font-weight: 500;
+}
 .inputData ,.info{
     display: grid;
     justify-content: center;
 }
+
+.location{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    padding: 80px;
+}
+
+.temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempmin_max{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .wave{
     opacity: 0.3;
     position: absolute;

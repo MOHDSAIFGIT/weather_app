@@ -1,10 +1,23 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "./css/style.css";
 
 const Tempapp = () => {
 
     const [city, setCity] = useState(null);
     const [search, setSearch] = useState("Mumbai");
+
+    useEffect( () => {
+        const fetchApi = async () => {
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=8525adbbe0845dba1540a94b5fe62beb`
+            const response = await fetch(url);
+            
+            const resJson = await response.json();
+            console.log(resJson);
+        }
+
+
+        fetchApi();
+    })
 
     return (
         <>
@@ -22,7 +35,7 @@ const Tempapp = () => {
 
                 <div className="info">
                     <h2 className="location">
-                        <i class="fas fa-street-view"></i>{city}
+                        <i className="fas fa-street-view"></i>{city}
                     </h2>
                     <h1 className="temp">
 
